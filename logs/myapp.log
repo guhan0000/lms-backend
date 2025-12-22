@@ -1,0 +1,503 @@
+2025-12-22T19:02:37.446+05:30  INFO 29807 --- [LibMgmntSystem] [main] com.lms.demo.LibMgmntSystemApplication   : Starting LibMgmntSystemApplication using Java 17.0.17 with PID 29807 (/home/guhan/LmsBackend/target/classes started by guhan in /home/guhan/LmsBackend)
+2025-12-22T19:02:37.452+05:30  INFO 29807 --- [LibMgmntSystem] [main] com.lms.demo.LibMgmntSystemApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-12-22T19:02:39.249+05:30  INFO 29807 --- [LibMgmntSystem] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-22T19:02:39.250+05:30  INFO 29807 --- [LibMgmntSystem] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-12-22T19:02:39.275+05:30  INFO 29807 --- [LibMgmntSystem] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 0 JDBC repository interfaces.
+2025-12-22T19:02:39.313+05:30  INFO 29807 --- [LibMgmntSystem] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-22T19:02:39.315+05:30  INFO 29807 --- [LibMgmntSystem] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-22T19:02:39.326+05:30  INFO 29807 --- [LibMgmntSystem] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2025-12-22T19:02:39.835+05:30  INFO 29807 --- [LibMgmntSystem] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 6902 (http)
+2025-12-22T19:02:39.855+05:30  INFO 29807 --- [LibMgmntSystem] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-22T19:02:39.855+05:30  INFO 29807 --- [LibMgmntSystem] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2025-12-22T19:02:39.893+05:30  INFO 29807 --- [LibMgmntSystem] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2306 ms
+2025-12-22T19:02:40.068+05:30  INFO 29807 --- [LibMgmntSystem] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2025-12-22T19:02:40.184+05:30  INFO 29807 --- [LibMgmntSystem] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.0.Final
+2025-12-22T19:02:40.706+05:30  INFO 29807 --- [LibMgmntSystem] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-22T19:02:40.738+05:30  INFO 29807 --- [LibMgmntSystem] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-22T19:02:41.202+05:30  INFO 29807 --- [LibMgmntSystem] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@37c87fcc
+2025-12-22T19:02:41.206+05:30  INFO 29807 --- [LibMgmntSystem] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-22T19:02:41.478+05:30  INFO 29807 --- [LibMgmntSystem] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/lms]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.44
+	Default catalog/schema: lms/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-22T19:02:42.706+05:30  INFO 29807 --- [LibMgmntSystem] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-22T19:02:43.001+05:30  INFO 29807 --- [LibMgmntSystem] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-22T19:02:43.067+05:30  WARN 29807 --- [LibMgmntSystem] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-22T19:02:44.134+05:30  INFO 29807 --- [LibMgmntSystem] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 6902 (http) with context path '/'
+2025-12-22T19:02:44.141+05:30  INFO 29807 --- [LibMgmntSystem] [main] com.lms.demo.LibMgmntSystemApplication   : Started LibMgmntSystemApplication in 8.261 seconds (process running for 9.614)
+2025-12-22T19:03:31.544+05:30  INFO 29807 --- [LibMgmntSystem] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-22T19:03:31.550+05:30  INFO 29807 --- [LibMgmntSystem] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2025-12-22T19:03:31.721+05:30  INFO 29807 --- [LibMgmntSystem] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-22T19:03:31.725+05:30  INFO 29807 --- [LibMgmntSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-12-22T19:03:31.736+05:30  INFO 29807 --- [LibMgmntSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-12-22T19:38:27.617+05:30  INFO 31206 --- [LibMgmntSystem] [main] com.lms.demo.LibMgmntSystemApplication   : Starting LibMgmntSystemApplication using Java 17.0.17 with PID 31206 (/home/guhan/LmsBackend/target/classes started by guhan in /home/guhan/LmsBackend)
+2025-12-22T19:38:27.621+05:30  INFO 31206 --- [LibMgmntSystem] [main] com.lms.demo.LibMgmntSystemApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-12-22T19:38:28.433+05:30  INFO 31206 --- [LibMgmntSystem] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-22T19:38:28.435+05:30  INFO 31206 --- [LibMgmntSystem] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-12-22T19:38:28.475+05:30  INFO 31206 --- [LibMgmntSystem] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.lms.demo.repository.BookRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-12-22T19:38:28.476+05:30  INFO 31206 --- [LibMgmntSystem] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 0 JDBC repository interfaces.
+2025-12-22T19:38:28.490+05:30  INFO 31206 --- [LibMgmntSystem] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-22T19:38:28.491+05:30  INFO 31206 --- [LibMgmntSystem] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-22T19:38:28.510+05:30  INFO 31206 --- [LibMgmntSystem] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 1 JPA repository interface.
+2025-12-22T19:38:28.908+05:30  INFO 31206 --- [LibMgmntSystem] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 6902 (http)
+2025-12-22T19:38:28.923+05:30  INFO 31206 --- [LibMgmntSystem] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-22T19:38:28.924+05:30  INFO 31206 --- [LibMgmntSystem] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2025-12-22T19:38:28.968+05:30  INFO 31206 --- [LibMgmntSystem] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1276 ms
+2025-12-22T19:38:29.077+05:30  INFO 31206 --- [LibMgmntSystem] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2025-12-22T19:38:29.114+05:30  INFO 31206 --- [LibMgmntSystem] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.0.Final
+2025-12-22T19:38:29.440+05:30  INFO 31206 --- [LibMgmntSystem] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-22T19:38:29.464+05:30  INFO 31206 --- [LibMgmntSystem] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-22T19:38:30.341+05:30  INFO 31206 --- [LibMgmntSystem] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1bb172dd
+2025-12-22T19:38:30.343+05:30  INFO 31206 --- [LibMgmntSystem] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-22T19:38:30.455+05:30  INFO 31206 --- [LibMgmntSystem] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/lms]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.44
+	Default catalog/schema: lms/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-22T19:38:31.234+05:30  INFO 31206 --- [LibMgmntSystem] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-22T19:38:31.367+05:30  INFO 31206 --- [LibMgmntSystem] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-22T19:38:31.466+05:30  INFO 31206 --- [LibMgmntSystem] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-22T19:38:31.634+05:30  WARN 31206 --- [LibMgmntSystem] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-22T19:38:31.978+05:30  INFO 31206 --- [LibMgmntSystem] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 6902 (http) with context path '/'
+2025-12-22T19:38:31.983+05:30  INFO 31206 --- [LibMgmntSystem] [main] com.lms.demo.LibMgmntSystemApplication   : Started LibMgmntSystemApplication in 5.027 seconds (process running for 5.599)
+2025-12-22T19:38:38.952+05:30  INFO 31206 --- [LibMgmntSystem] [http-nio-6902-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-22T19:38:38.952+05:30  INFO 31206 --- [LibMgmntSystem] [http-nio-6902-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-22T19:38:38.955+05:30  INFO 31206 --- [LibMgmntSystem] [http-nio-6902-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-12-22T19:45:07.557+05:30  INFO 31206 --- [LibMgmntSystem] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-22T19:45:07.604+05:30  INFO 31206 --- [LibMgmntSystem] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2025-12-22T19:45:07.610+05:30  INFO 31206 --- [LibMgmntSystem] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-22T19:45:07.615+05:30  INFO 31206 --- [LibMgmntSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-12-22T19:45:07.655+05:30  INFO 31206 --- [LibMgmntSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-12-22T19:48:34.047+05:30  INFO 31622 --- [LibMgmntSystem] [main] com.lms.demo.LibMgmntSystemApplication   : Starting LibMgmntSystemApplication using Java 17.0.17 with PID 31622 (/home/guhan/LmsBackend/target/classes started by guhan in /home/guhan/LmsBackend)
+2025-12-22T19:48:34.051+05:30  INFO 31622 --- [LibMgmntSystem] [main] com.lms.demo.LibMgmntSystemApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-12-22T19:48:34.823+05:30  INFO 31622 --- [LibMgmntSystem] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-22T19:48:34.824+05:30  INFO 31622 --- [LibMgmntSystem] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-12-22T19:48:35.092+05:30  INFO 31622 --- [LibMgmntSystem] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.lms.demo.repository.BookRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-12-22T19:48:35.093+05:30  INFO 31622 --- [LibMgmntSystem] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 262 ms. Found 0 JDBC repository interfaces.
+2025-12-22T19:48:35.105+05:30  INFO 31622 --- [LibMgmntSystem] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-22T19:48:35.106+05:30  INFO 31622 --- [LibMgmntSystem] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-22T19:48:35.293+05:30  INFO 31622 --- [LibMgmntSystem] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 183 ms. Found 1 JPA repository interface.
+2025-12-22T19:48:35.912+05:30  INFO 31622 --- [LibMgmntSystem] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 6902 (http)
+2025-12-22T19:48:35.923+05:30  INFO 31622 --- [LibMgmntSystem] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-22T19:48:35.924+05:30  INFO 31622 --- [LibMgmntSystem] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2025-12-22T19:48:35.958+05:30  INFO 31622 --- [LibMgmntSystem] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1845 ms
+2025-12-22T19:48:36.068+05:30  INFO 31622 --- [LibMgmntSystem] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2025-12-22T19:48:36.107+05:30  INFO 31622 --- [LibMgmntSystem] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.0.Final
+2025-12-22T19:48:36.442+05:30  INFO 31622 --- [LibMgmntSystem] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-22T19:48:36.466+05:30  INFO 31622 --- [LibMgmntSystem] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-22T19:48:37.073+05:30  INFO 31622 --- [LibMgmntSystem] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@71316cd7
+2025-12-22T19:48:37.075+05:30  INFO 31622 --- [LibMgmntSystem] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-22T19:48:37.145+05:30  INFO 31622 --- [LibMgmntSystem] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/lms]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.44
+	Default catalog/schema: lms/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-22T19:48:38.231+05:30  INFO 31622 --- [LibMgmntSystem] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-22T19:48:38.401+05:30  INFO 31622 --- [LibMgmntSystem] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-22T19:48:38.520+05:30  INFO 31622 --- [LibMgmntSystem] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-22T19:48:38.744+05:30  WARN 31622 --- [LibMgmntSystem] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-22T19:48:39.249+05:30  INFO 31622 --- [LibMgmntSystem] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 6902 (http) with context path '/'
+2025-12-22T19:48:39.257+05:30  INFO 31622 --- [LibMgmntSystem] [main] com.lms.demo.LibMgmntSystemApplication   : Started LibMgmntSystemApplication in 5.878 seconds (process running for 6.533)
+2025-12-22T19:48:54.010+05:30  INFO 31622 --- [LibMgmntSystem] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-22T19:48:54.015+05:30  INFO 31622 --- [LibMgmntSystem] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2025-12-22T19:48:54.021+05:30  INFO 31622 --- [LibMgmntSystem] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-22T19:48:54.025+05:30  INFO 31622 --- [LibMgmntSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-12-22T19:48:54.035+05:30  INFO 31622 --- [LibMgmntSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-12-22T19:54:47.400+05:30  INFO 31978 --- [LibMgmntSystem] [main] com.lms.demo.LibMgmntSystemApplication   : Starting LibMgmntSystemApplication using Java 17.0.17 with PID 31978 (/home/guhan/LmsBackend/target/classes started by guhan in /home/guhan/LmsBackend)
+2025-12-22T19:54:47.404+05:30  INFO 31978 --- [LibMgmntSystem] [main] com.lms.demo.LibMgmntSystemApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-12-22T19:54:48.078+05:30  INFO 31978 --- [LibMgmntSystem] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-22T19:54:48.079+05:30  INFO 31978 --- [LibMgmntSystem] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-12-22T19:54:48.104+05:30  INFO 31978 --- [LibMgmntSystem] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.lms.demo.repository.BookRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-12-22T19:54:48.104+05:30  INFO 31978 --- [LibMgmntSystem] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 0 JDBC repository interfaces.
+2025-12-22T19:54:48.114+05:30  INFO 31978 --- [LibMgmntSystem] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-22T19:54:48.115+05:30  INFO 31978 --- [LibMgmntSystem] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-22T19:54:48.135+05:30  INFO 31978 --- [LibMgmntSystem] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 1 JPA repository interface.
+2025-12-22T19:54:48.520+05:30  INFO 31978 --- [LibMgmntSystem] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 6902 (http)
+2025-12-22T19:54:48.616+05:30  INFO 31978 --- [LibMgmntSystem] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-22T19:54:48.617+05:30  INFO 31978 --- [LibMgmntSystem] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2025-12-22T19:54:48.683+05:30  INFO 31978 --- [LibMgmntSystem] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1211 ms
+2025-12-22T19:54:48.926+05:30  INFO 31978 --- [LibMgmntSystem] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2025-12-22T19:54:48.961+05:30  INFO 31978 --- [LibMgmntSystem] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.0.Final
+2025-12-22T19:54:49.286+05:30  INFO 31978 --- [LibMgmntSystem] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-22T19:54:49.423+05:30  INFO 31978 --- [LibMgmntSystem] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-22T19:54:50.313+05:30  INFO 31978 --- [LibMgmntSystem] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6282f1eb
+2025-12-22T19:54:50.315+05:30  INFO 31978 --- [LibMgmntSystem] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-22T19:54:50.383+05:30  INFO 31978 --- [LibMgmntSystem] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/lms]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.44
+	Default catalog/schema: lms/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-22T19:54:51.945+05:30  INFO 31978 --- [LibMgmntSystem] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-22T19:54:52.055+05:30  INFO 31978 --- [LibMgmntSystem] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-22T19:54:52.264+05:30  INFO 31978 --- [LibMgmntSystem] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-22T19:54:52.610+05:30  WARN 31978 --- [LibMgmntSystem] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-22T19:54:53.231+05:30  INFO 31978 --- [LibMgmntSystem] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 6902 (http) with context path '/'
+2025-12-22T19:54:53.238+05:30  INFO 31978 --- [LibMgmntSystem] [main] com.lms.demo.LibMgmntSystemApplication   : Started LibMgmntSystemApplication in 6.423 seconds (process running for 6.933)
+2025-12-22T19:55:38.201+05:30  INFO 31978 --- [LibMgmntSystem] [http-nio-6902-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-22T19:55:38.202+05:30  INFO 31978 --- [LibMgmntSystem] [http-nio-6902-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-22T19:55:38.205+05:30  INFO 31978 --- [LibMgmntSystem] [http-nio-6902-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-12-22T19:57:18.833+05:30 ERROR 31978 --- [LibMgmntSystem] [http-nio-6902-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.RuntimeException: Book not found] with root cause
+
+java.lang.RuntimeException: Book not found
+	at com.lms.demo.service.BookService.lambda$getBook$0(BookService.java:18) ~[classes/:na]
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403) ~[na:na]
+	at com.lms.demo.service.BookService.getBook(BookService.java:18) ~[classes/:na]
+	at com.lms.demo.controller.BookController.getBook(BookController.java:21) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-11.0.15.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.15.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1778) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2025-12-22T19:57:26.322+05:30  INFO 31978 --- [LibMgmntSystem] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-22T19:57:26.326+05:30  INFO 31978 --- [LibMgmntSystem] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2025-12-22T19:57:26.331+05:30  INFO 31978 --- [LibMgmntSystem] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-22T19:57:26.335+05:30  INFO 31978 --- [LibMgmntSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-12-22T19:57:26.346+05:30  INFO 31978 --- [LibMgmntSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-12-22T20:07:55.817+05:30  INFO 32444 --- [LibMgmntSystem] [main] com.lms.demo.LibMgmntSystemApplication   : Starting LibMgmntSystemApplication using Java 17.0.17 with PID 32444 (/home/guhan/LmsBackend/target/classes started by guhan in /home/guhan/LmsBackend)
+2025-12-22T20:07:55.822+05:30  INFO 32444 --- [LibMgmntSystem] [main] com.lms.demo.LibMgmntSystemApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-12-22T20:07:56.490+05:30  INFO 32444 --- [LibMgmntSystem] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-22T20:07:56.491+05:30  INFO 32444 --- [LibMgmntSystem] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-12-22T20:07:56.515+05:30  INFO 32444 --- [LibMgmntSystem] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.lms.demo.repository.BookRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-12-22T20:07:56.516+05:30  INFO 32444 --- [LibMgmntSystem] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 0 JDBC repository interfaces.
+2025-12-22T20:07:56.527+05:30  INFO 32444 --- [LibMgmntSystem] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-22T20:07:56.528+05:30  INFO 32444 --- [LibMgmntSystem] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-22T20:07:56.546+05:30  INFO 32444 --- [LibMgmntSystem] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 1 JPA repository interface.
+2025-12-22T20:07:56.914+05:30  INFO 32444 --- [LibMgmntSystem] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 6902 (http)
+2025-12-22T20:07:57.030+05:30  INFO 32444 --- [LibMgmntSystem] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-22T20:07:57.031+05:30  INFO 32444 --- [LibMgmntSystem] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2025-12-22T20:07:57.096+05:30  INFO 32444 --- [LibMgmntSystem] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1220 ms
+2025-12-22T20:07:57.235+05:30  INFO 32444 --- [LibMgmntSystem] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2025-12-22T20:07:57.270+05:30  INFO 32444 --- [LibMgmntSystem] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.0.Final
+2025-12-22T20:07:57.598+05:30  INFO 32444 --- [LibMgmntSystem] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-22T20:07:57.736+05:30  INFO 32444 --- [LibMgmntSystem] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-22T20:07:58.543+05:30  INFO 32444 --- [LibMgmntSystem] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@120d6cbf
+2025-12-22T20:07:58.546+05:30  INFO 32444 --- [LibMgmntSystem] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-22T20:07:58.646+05:30  INFO 32444 --- [LibMgmntSystem] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/lms]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.44
+	Default catalog/schema: lms/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-22T20:07:59.923+05:30  INFO 32444 --- [LibMgmntSystem] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-22T20:08:00.245+05:30  INFO 32444 --- [LibMgmntSystem] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-22T20:08:00.467+05:30  INFO 32444 --- [LibMgmntSystem] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-22T20:08:00.746+05:30  WARN 32444 --- [LibMgmntSystem] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-22T20:08:01.297+05:30  INFO 32444 --- [LibMgmntSystem] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 6902 (http) with context path '/'
+2025-12-22T20:08:01.307+05:30  INFO 32444 --- [LibMgmntSystem] [main] com.lms.demo.LibMgmntSystemApplication   : Started LibMgmntSystemApplication in 6.055 seconds (process running for 6.663)
+2025-12-22T20:08:31.882+05:30  INFO 32444 --- [LibMgmntSystem] [http-nio-6902-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-22T20:08:31.883+05:30  INFO 32444 --- [LibMgmntSystem] [http-nio-6902-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-22T20:08:31.886+05:30  INFO 32444 --- [LibMgmntSystem] [http-nio-6902-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-12-22T20:12:43.359+05:30  INFO 32444 --- [LibMgmntSystem] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-22T20:12:43.362+05:30  INFO 32444 --- [LibMgmntSystem] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2025-12-22T20:12:43.369+05:30  INFO 32444 --- [LibMgmntSystem] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-22T20:12:43.375+05:30  INFO 32444 --- [LibMgmntSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-12-22T20:12:43.385+05:30  INFO 32444 --- [LibMgmntSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-12-22T20:12:55.502+05:30  INFO 32671 --- [LibMgmntSystem] [main] com.lms.demo.LibMgmntSystemApplication   : Starting LibMgmntSystemApplication using Java 17.0.17 with PID 32671 (/home/guhan/LmsBackend/target/classes started by guhan in /home/guhan/LmsBackend)
+2025-12-22T20:12:55.508+05:30  INFO 32671 --- [LibMgmntSystem] [main] com.lms.demo.LibMgmntSystemApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-12-22T20:12:56.147+05:30  INFO 32671 --- [LibMgmntSystem] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-22T20:12:56.148+05:30  INFO 32671 --- [LibMgmntSystem] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-12-22T20:12:56.174+05:30  INFO 32671 --- [LibMgmntSystem] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.lms.demo.repository.BookRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-12-22T20:12:56.175+05:30  INFO 32671 --- [LibMgmntSystem] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 0 JDBC repository interfaces.
+2025-12-22T20:12:56.185+05:30  INFO 32671 --- [LibMgmntSystem] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-22T20:12:56.186+05:30  INFO 32671 --- [LibMgmntSystem] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-22T20:12:56.203+05:30  INFO 32671 --- [LibMgmntSystem] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 1 JPA repository interface.
+2025-12-22T20:12:56.562+05:30  INFO 32671 --- [LibMgmntSystem] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 6902 (http)
+2025-12-22T20:12:56.589+05:30  INFO 32671 --- [LibMgmntSystem] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-22T20:12:56.589+05:30  INFO 32671 --- [LibMgmntSystem] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2025-12-22T20:12:56.626+05:30  INFO 32671 --- [LibMgmntSystem] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1066 ms
+2025-12-22T20:12:56.744+05:30  INFO 32671 --- [LibMgmntSystem] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2025-12-22T20:12:56.785+05:30  INFO 32671 --- [LibMgmntSystem] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.0.Final
+2025-12-22T20:12:57.120+05:30  INFO 32671 --- [LibMgmntSystem] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-22T20:12:57.174+05:30  INFO 32671 --- [LibMgmntSystem] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-22T20:12:58.985+05:30  INFO 32671 --- [LibMgmntSystem] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@79d14037
+2025-12-22T20:12:58.988+05:30  INFO 32671 --- [LibMgmntSystem] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-22T20:12:59.191+05:30  INFO 32671 --- [LibMgmntSystem] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/lms]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.44
+	Default catalog/schema: lms/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-22T20:13:00.371+05:30  INFO 32671 --- [LibMgmntSystem] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-22T20:13:00.608+05:30  INFO 32671 --- [LibMgmntSystem] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-22T20:13:00.857+05:30  INFO 32671 --- [LibMgmntSystem] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-22T20:13:01.075+05:30  WARN 32671 --- [LibMgmntSystem] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-22T20:13:01.938+05:30  INFO 32671 --- [LibMgmntSystem] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 6902 (http) with context path '/'
+2025-12-22T20:13:01.945+05:30  INFO 32671 --- [LibMgmntSystem] [main] com.lms.demo.LibMgmntSystemApplication   : Started LibMgmntSystemApplication in 6.968 seconds (process running for 7.471)
+2025-12-22T20:13:15.750+05:30  INFO 32671 --- [LibMgmntSystem] [http-nio-6902-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-22T20:13:15.750+05:30  INFO 32671 --- [LibMgmntSystem] [http-nio-6902-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-22T20:13:15.752+05:30  INFO 32671 --- [LibMgmntSystem] [http-nio-6902-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-12-22T20:13:25.158+05:30 ERROR 32671 --- [LibMgmntSystem] [http-nio-6902-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.RuntimeException: Book not found] with root cause
+
+java.lang.RuntimeException: Book not found
+	at com.lms.demo.service.BookService.lambda$getBook$0(BookService.java:20) ~[classes/:na]
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403) ~[na:na]
+	at com.lms.demo.service.BookService.getBook(BookService.java:20) ~[classes/:na]
+	at com.lms.demo.controller.BookController.getBook(BookController.java:21) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-11.0.15.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.15.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1778) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2025-12-22T20:15:30.823+05:30  INFO 32671 --- [LibMgmntSystem] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-22T20:15:30.827+05:30  INFO 32671 --- [LibMgmntSystem] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2025-12-22T20:15:30.832+05:30  INFO 32671 --- [LibMgmntSystem] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-22T20:15:30.837+05:30  INFO 32671 --- [LibMgmntSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-12-22T20:15:30.849+05:30  INFO 32671 --- [LibMgmntSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-12-22T20:30:24.068+05:30  INFO 33303 --- [LibMgmntSystem] [main] com.lms.demo.LibMgmntSystemApplication   : Starting LibMgmntSystemApplication using Java 17.0.17 with PID 33303 (/home/guhan/LmsBackend/target/classes started by guhan in /home/guhan/LmsBackend)
+2025-12-22T20:30:24.072+05:30  INFO 33303 --- [LibMgmntSystem] [main] com.lms.demo.LibMgmntSystemApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-12-22T20:30:24.715+05:30  INFO 33303 --- [LibMgmntSystem] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-22T20:30:24.716+05:30  INFO 33303 --- [LibMgmntSystem] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-12-22T20:30:24.741+05:30  INFO 33303 --- [LibMgmntSystem] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.lms.demo.repository.BookRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-12-22T20:30:24.742+05:30  INFO 33303 --- [LibMgmntSystem] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 0 JDBC repository interfaces.
+2025-12-22T20:30:24.752+05:30  INFO 33303 --- [LibMgmntSystem] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-22T20:30:24.753+05:30  INFO 33303 --- [LibMgmntSystem] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-22T20:30:24.773+05:30  INFO 33303 --- [LibMgmntSystem] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 1 JPA repository interface.
+2025-12-22T20:30:25.165+05:30  INFO 33303 --- [LibMgmntSystem] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 6902 (http)
+2025-12-22T20:30:25.176+05:30  INFO 33303 --- [LibMgmntSystem] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-22T20:30:25.177+05:30  INFO 33303 --- [LibMgmntSystem] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2025-12-22T20:30:25.211+05:30  INFO 33303 --- [LibMgmntSystem] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1061 ms
+2025-12-22T20:30:25.321+05:30  INFO 33303 --- [LibMgmntSystem] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2025-12-22T20:30:25.365+05:30  INFO 33303 --- [LibMgmntSystem] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.0.Final
+2025-12-22T20:30:25.692+05:30  INFO 33303 --- [LibMgmntSystem] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-22T20:30:25.719+05:30  INFO 33303 --- [LibMgmntSystem] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-22T20:30:26.100+05:30  INFO 33303 --- [LibMgmntSystem] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1115be8c
+2025-12-22T20:30:26.103+05:30  INFO 33303 --- [LibMgmntSystem] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-22T20:30:26.191+05:30  INFO 33303 --- [LibMgmntSystem] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/lms]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.44
+	Default catalog/schema: lms/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-22T20:30:27.011+05:30  INFO 33303 --- [LibMgmntSystem] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-22T20:30:27.316+05:30  INFO 33303 --- [LibMgmntSystem] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-22T20:30:27.416+05:30  INFO 33303 --- [LibMgmntSystem] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-22T20:30:27.512+05:30  WARN 33303 --- [LibMgmntSystem] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-22T20:30:27.855+05:30  INFO 33303 --- [LibMgmntSystem] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 6902 (http) with context path '/'
+2025-12-22T20:30:27.861+05:30  INFO 33303 --- [LibMgmntSystem] [main] com.lms.demo.LibMgmntSystemApplication   : Started LibMgmntSystemApplication in 4.374 seconds (process running for 4.893)
+2025-12-22T20:30:47.032+05:30  INFO 33303 --- [LibMgmntSystem] [http-nio-6902-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-22T20:30:47.033+05:30  INFO 33303 --- [LibMgmntSystem] [http-nio-6902-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-22T20:30:47.037+05:30  INFO 33303 --- [LibMgmntSystem] [http-nio-6902-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-12-22T20:38:45.714+05:30  INFO 33303 --- [LibMgmntSystem] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-22T20:38:45.715+05:30  INFO 33303 --- [LibMgmntSystem] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2025-12-22T20:38:45.718+05:30  INFO 33303 --- [LibMgmntSystem] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-22T20:38:45.720+05:30  INFO 33303 --- [LibMgmntSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-12-22T20:38:45.724+05:30  INFO 33303 --- [LibMgmntSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-12-22T20:40:17.495+05:30  INFO 33659 --- [LibMgmntSystem] [main] com.lms.demo.LibMgmntSystemApplication   : Starting LibMgmntSystemApplication using Java 17.0.17 with PID 33659 (/home/guhan/LmsBackend/target/classes started by guhan in /home/guhan/LmsBackend)
+2025-12-22T20:40:17.498+05:30  INFO 33659 --- [LibMgmntSystem] [main] com.lms.demo.LibMgmntSystemApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-12-22T20:40:18.046+05:30  INFO 33659 --- [LibMgmntSystem] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-22T20:40:18.047+05:30  INFO 33659 --- [LibMgmntSystem] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-12-22T20:40:18.066+05:30  INFO 33659 --- [LibMgmntSystem] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.lms.demo.repository.BookRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-12-22T20:40:18.066+05:30  INFO 33659 --- [LibMgmntSystem] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 0 JDBC repository interfaces.
+2025-12-22T20:40:18.074+05:30  INFO 33659 --- [LibMgmntSystem] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-22T20:40:18.075+05:30  INFO 33659 --- [LibMgmntSystem] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-22T20:40:18.091+05:30  INFO 33659 --- [LibMgmntSystem] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 1 JPA repository interface.
+2025-12-22T20:40:18.382+05:30  INFO 33659 --- [LibMgmntSystem] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 6902 (http)
+2025-12-22T20:40:18.390+05:30  INFO 33659 --- [LibMgmntSystem] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-22T20:40:18.390+05:30  INFO 33659 --- [LibMgmntSystem] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2025-12-22T20:40:18.416+05:30  INFO 33659 --- [LibMgmntSystem] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 866 ms
+2025-12-22T20:40:18.499+05:30  INFO 33659 --- [LibMgmntSystem] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2025-12-22T20:40:18.527+05:30  INFO 33659 --- [LibMgmntSystem] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.0.Final
+2025-12-22T20:40:18.796+05:30  INFO 33659 --- [LibMgmntSystem] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-22T20:40:18.815+05:30  INFO 33659 --- [LibMgmntSystem] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-22T20:40:19.089+05:30  INFO 33659 --- [LibMgmntSystem] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@79d14037
+2025-12-22T20:40:19.091+05:30  INFO 33659 --- [LibMgmntSystem] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-22T20:40:19.141+05:30  INFO 33659 --- [LibMgmntSystem] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/lms]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.44
+	Default catalog/schema: lms/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-22T20:40:19.740+05:30  INFO 33659 --- [LibMgmntSystem] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-22T20:40:19.911+05:30  INFO 33659 --- [LibMgmntSystem] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-22T20:40:19.970+05:30  INFO 33659 --- [LibMgmntSystem] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-22T20:40:20.047+05:30  WARN 33659 --- [LibMgmntSystem] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-22T20:40:20.301+05:30  INFO 33659 --- [LibMgmntSystem] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 6902 (http) with context path '/'
+2025-12-22T20:40:20.306+05:30  INFO 33659 --- [LibMgmntSystem] [main] com.lms.demo.LibMgmntSystemApplication   : Started LibMgmntSystemApplication in 3.284 seconds (process running for 3.71)
+2025-12-22T20:40:40.628+05:30  INFO 33659 --- [LibMgmntSystem] [http-nio-6902-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-22T20:40:40.629+05:30  INFO 33659 --- [LibMgmntSystem] [http-nio-6902-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-22T20:40:40.630+05:30  INFO 33659 --- [LibMgmntSystem] [http-nio-6902-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-12-22T20:41:47.463+05:30  INFO 33659 --- [LibMgmntSystem] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-22T20:41:47.464+05:30  INFO 33659 --- [LibMgmntSystem] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2025-12-22T20:41:47.467+05:30  INFO 33659 --- [LibMgmntSystem] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-22T20:41:47.469+05:30  INFO 33659 --- [LibMgmntSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-12-22T20:41:47.473+05:30  INFO 33659 --- [LibMgmntSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-12-22T20:43:10.680+05:30  INFO 33852 --- [LibMgmntSystem] [main] com.lms.demo.LibMgmntSystemApplication   : Starting LibMgmntSystemApplication using Java 17.0.17 with PID 33852 (/home/guhan/LmsBackend/target/classes started by guhan in /home/guhan/LmsBackend)
+2025-12-22T20:43:10.688+05:30  INFO 33852 --- [LibMgmntSystem] [main] com.lms.demo.LibMgmntSystemApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-12-22T20:43:11.238+05:30  INFO 33852 --- [LibMgmntSystem] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-22T20:43:11.239+05:30  INFO 33852 --- [LibMgmntSystem] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-12-22T20:43:11.258+05:30  INFO 33852 --- [LibMgmntSystem] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.lms.demo.repository.BookRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-12-22T20:43:11.259+05:30  INFO 33852 --- [LibMgmntSystem] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 0 JDBC repository interfaces.
+2025-12-22T20:43:11.268+05:30  INFO 33852 --- [LibMgmntSystem] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-22T20:43:11.269+05:30  INFO 33852 --- [LibMgmntSystem] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-22T20:43:11.284+05:30  INFO 33852 --- [LibMgmntSystem] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interface.
+2025-12-22T20:43:11.584+05:30  INFO 33852 --- [LibMgmntSystem] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 6902 (http)
+2025-12-22T20:43:11.592+05:30  INFO 33852 --- [LibMgmntSystem] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-22T20:43:11.593+05:30  INFO 33852 --- [LibMgmntSystem] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2025-12-22T20:43:11.620+05:30  INFO 33852 --- [LibMgmntSystem] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 875 ms
+2025-12-22T20:43:11.702+05:30  INFO 33852 --- [LibMgmntSystem] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2025-12-22T20:43:11.729+05:30  INFO 33852 --- [LibMgmntSystem] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.0.Final
+2025-12-22T20:43:11.994+05:30  INFO 33852 --- [LibMgmntSystem] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-22T20:43:12.013+05:30  INFO 33852 --- [LibMgmntSystem] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-22T20:43:12.228+05:30  INFO 33852 --- [LibMgmntSystem] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@25589735
+2025-12-22T20:43:12.229+05:30  INFO 33852 --- [LibMgmntSystem] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-22T20:43:12.278+05:30  INFO 33852 --- [LibMgmntSystem] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/lms]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.44
+	Default catalog/schema: lms/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-22T20:43:12.873+05:30  INFO 33852 --- [LibMgmntSystem] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-22T20:43:13.187+05:30  INFO 33852 --- [LibMgmntSystem] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-22T20:43:13.237+05:30  INFO 33852 --- [LibMgmntSystem] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-22T20:43:13.312+05:30  WARN 33852 --- [LibMgmntSystem] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-22T20:43:13.560+05:30  INFO 33852 --- [LibMgmntSystem] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 6902 (http) with context path '/'
+2025-12-22T20:43:13.564+05:30  INFO 33852 --- [LibMgmntSystem] [main] com.lms.demo.LibMgmntSystemApplication   : Started LibMgmntSystemApplication in 3.376 seconds (process running for 3.798)
+2025-12-22T20:43:25.546+05:30  INFO 33852 --- [LibMgmntSystem] [http-nio-6902-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-22T20:43:25.547+05:30  INFO 33852 --- [LibMgmntSystem] [http-nio-6902-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-22T20:43:25.548+05:30  INFO 33852 --- [LibMgmntSystem] [http-nio-6902-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-12-22T20:43:45.272+05:30  INFO 33852 --- [LibMgmntSystem] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-22T20:43:45.275+05:30  INFO 33852 --- [LibMgmntSystem] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2025-12-22T20:43:45.278+05:30  INFO 33852 --- [LibMgmntSystem] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-22T20:43:45.280+05:30  INFO 33852 --- [LibMgmntSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-12-22T20:43:45.284+05:30  INFO 33852 --- [LibMgmntSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
