@@ -17,10 +17,10 @@ import java.util.Objects;
 public class IssueController {
     @Autowired
     private IssueService issueService;
-    @GetMapping("get/issue/all")
-    public Collection<Issue> getAllIssuedBooks(String status){
-        return issueService.getAllIssuedBooks(status);
-    }
+//    @GetMapping("get/issue/all")
+//    public Collection<Issue> getAllIssuedBooks(String status){
+//        return issueService.getAllIssuedBooks(status);
+//    }
     @PostMapping("issue/")
     public Issue issueBook(@RequestParam String email,@RequestParam Long bookId){
         return issueService.issueBook(email,bookId);
@@ -29,8 +29,9 @@ public class IssueController {
     public Issue returnBook(@RequestParam String email, @RequestParam Long bookId){
         return issueService.returnBook(email, bookId);
 //        Issue issue = issues.get(0);
-
-
     }
-
+    @GetMapping("history/")
+    public Collection<Issue>geBorrowedHistory(@RequestParam String email){
+        return issueService.getBorrowedHistory(email);
+    }
 }

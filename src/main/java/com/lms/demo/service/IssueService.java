@@ -27,10 +27,10 @@ public class IssueService {
     BookRepository bookRepository;
     Issue save;
 
-    public Collection<Issue> getAllIssuedBooks(String status){
-        status="ISSUED";
-        return issueRepository.findByStatus(status);
-    }
+//    public Collection<Issue> getAllIssuedBooks(String status){
+//        status="ISSUED";
+//        return issueRepository.findByStatus(status);
+//    }
     public Issue issueBook(String email, Long bookId){
         User user = userRepository.findByEmail(email).orElseThrow(()->new RuntimeException("User Not Found"));
         Book book = bookRepository.findById(bookId).orElseThrow(() -> new RuntimeException("Book Not Found"));
@@ -39,6 +39,7 @@ public class IssueService {
             throw new RuntimeException("Book out of stock");
         }
         book.setAvailableCopies(book.getAvailableCopies()-1);
+        bookRepository.save(book);
         Issue issue=new Issue();
         issue.setIssueDate(LocalDate.now());
         issue.setStatus("ISSUED");
@@ -53,16 +54,25 @@ public class IssueService {
         List<Issue> issues = issueRepository.findByUser(user);
 
         for(Issue issue:issues){
-            if(Objects.equals(issue.getBook().getBookId(), bookId)){
+            if(Objects.equals(issue.getBook().getBookId(), bookId) && issue.getStatus().equals("ISSUED")){
                 issue.setStatus("RETURN");
                 issue.setReturnDate(LocalDate.now());
                 book.setAvailableCopies(book.getAvailableCopies()+1);
-               save = issueRepository.save(issue);
+                bookRepository.save(book);
+                save = issueRepository.save(issue);
             }
+
         }
 
 
        return save;
+    }
+    public Collection<Issue> getBorrowedHistory(String email){
+        log.info("Searching user with email: [{}]", email);
+
+        User user=userRepository.findByEmail(email).orElseThrow(()->new RuntimeException("User not found"));
+         return  issueRepository.findByUser(user);
+
     }
 
 }
