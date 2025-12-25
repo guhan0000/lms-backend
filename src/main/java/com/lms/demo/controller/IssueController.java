@@ -2,8 +2,10 @@ package com.lms.demo.controller;
 
 import com.lms.demo.model.Book;
 import com.lms.demo.model.Issue;
+import com.lms.demo.model.User;
 import com.lms.demo.repository.IssueRepository;
 import com.lms.demo.service.IssueService;
+import com.lms.demo.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -17,10 +19,13 @@ import java.util.Objects;
 public class IssueController {
     @Autowired
     private IssueService issueService;
-//    @GetMapping("get/issue/all")
-//    public Collection<Issue> getAllIssuedBooks(String status){
-//        return issueService.getAllIssuedBooks(status);
-//    }
+    @Autowired
+    private UserService userService;
+
+    @GetMapping("admin/history")
+    public Collection<Issue> getAllIssuedBooks(){
+        return issueService.getAllIssuedBooks();
+    }
     @PostMapping("issue/")
     public Issue issueBook(@RequestParam String email,@RequestParam Long bookId){
         return issueService.issueBook(email,bookId);
@@ -34,4 +39,10 @@ public class IssueController {
     public Collection<Issue>geBorrowedHistory(@RequestParam String email){
         return issueService.getBorrowedHistory(email);
     }
+//    @GetMapping("admin/history")
+//    public List<User> getAllUsers(){
+//        return issueService.getAllUsers();
+//    }
+
 }
+

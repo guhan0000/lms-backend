@@ -27,10 +27,10 @@ public class IssueService {
     BookRepository bookRepository;
     Issue save;
 
-//    public Collection<Issue> getAllIssuedBooks(String status){
-//        status="ISSUED";
-//        return issueRepository.findByStatus(status);
-//    }
+    public Collection<Issue> getAllIssuedBooks(){
+
+        return issueRepository.findAll();
+    }
     public Issue issueBook(String email, Long bookId){
         User user = userRepository.findByEmail(email).orElseThrow(()->new RuntimeException("User Not Found"));
         Book book = bookRepository.findById(bookId).orElseThrow(() -> new RuntimeException("Book Not Found"));
@@ -74,5 +74,8 @@ public class IssueService {
          return  issueRepository.findByUser(user);
 
     }
+//    public List<User>getAllUsers(){
+//        return userRepository.findAll();
+//    }
 
 }
