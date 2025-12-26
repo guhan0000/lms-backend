@@ -6,14 +6,18 @@ import com.lms.demo.model.User;
 import com.lms.demo.repository.IssueRepository;
 import com.lms.demo.service.IssueService;
 import com.lms.demo.service.UserService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDate;
 import java.util.Collection;
 import java.util.List;
+import java.util.Map;
 import java.util.Objects;
 
+@Slf4j
 @RestController
 @RequestMapping("/api/issues/")
 public class IssueController {
@@ -26,17 +30,21 @@ public class IssueController {
     public Collection<Issue> getAllIssuedBooks(){
         return issueService.getAllIssuedBooks();
     }
-    @PostMapping("issue/")
-    public Issue issueBook(@RequestParam String email,@RequestParam Long bookId){
+    @PostMapping("issue/{bookId}")
+    public Issue issueBook(@PathVariable Long bookId){
+        String email= Objects.requireNonNull(SecurityContextHolder.getContext().getAuthentication()).getName();
+        log.info("email{email}",email);
         return issueService.issueBook(email,bookId);
     }
-    @GetMapping("return/")
-    public Issue returnBook(@RequestParam String email, @RequestParam Long bookId){
+    @PostMapping("return/{bookId}")
+    public Issue returnBook(@PathVariable Long bookId){
+        String email= Objects.requireNonNull(SecurityContextHolder.getContext().getAuthentication()).getName();
         return issueService.returnBook(email, bookId);
 //        Issue issue = issues.get(0);
     }
     @GetMapping("history/")
-    public Collection<Issue>geBorrowedHistory(@RequestParam String email){
+    public Collection<Issue>geBorrowedHistory(){
+        String email= Objects.requireNonNull(SecurityContextHolder.getContext().getAuthentication()).getName();
         return issueService.getBorrowedHistory(email);
     }
 //    @GetMapping("admin/history")
