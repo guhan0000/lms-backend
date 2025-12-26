@@ -44,8 +44,8 @@ public class SecurityConfig {
                 .authorizeHttpRequests(auth->auth
                         .requestMatchers("/api/users/register","/api/users/login")
                         .permitAll()
-                        .requestMatchers("/api/books/add","/api/books/delete/**","/api/books/update/**").hasRole("ADMIN")
-                        .requestMatchers("/issue/**","/return/**")
+                        .requestMatchers("/api/books/add","/api/books/delete/**","/api/books/update/**","/api/issues/admin/**").hasRole("ADMIN")
+                        .requestMatchers("/api/issues/**")
                         .authenticated().anyRequest()
                         .authenticated())
                 .sessionManagement(session->session
@@ -85,3 +85,4 @@ public class SecurityConfig {
     }
 
 }
+//,"/apireturn/**"
