@@ -45,9 +45,9 @@ public class SecurityConfig {
                         .requestMatchers("/api/users/register","/api/users/login")
                         .permitAll()
                         .requestMatchers("/api/books/add","/api/books/delete/**","/api/books/update/**","/api/issues/admin/**").hasRole("ADMIN")
-                        .requestMatchers("/api/issues/**")
-                        .authenticated().anyRequest()
-                        .authenticated())
+                        .requestMatchers("/api/issues/issue/**","/api/issues/return/**","/api/issues/history/**")
+                        .hasRole("MEMBER")
+                        )
                 .sessionManagement(session->session
                         .sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .addFilterBefore(jwtRwquestFilter(), UsernamePasswordAuthenticationFilter.class);
