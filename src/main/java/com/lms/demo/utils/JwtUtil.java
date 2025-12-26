@@ -1,5 +1,6 @@
 package com.lms.demo.utils;
 
+import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import io.jsonwebtoken.security.Keys;
@@ -13,7 +14,7 @@ import java.util.Map;
 
 @Component
 public class JwtUtil {
-    private  final String SECRET="Guhan is a good boy since 2002";
+    private  final String SECRET="Guhan is a good boy since 2002 and he is a very hardworker born to win";
     private final long  EXPIRTION=1000*60*60;
     private final Key SECRET_KEY= Keys.hmacShaKeyFor(SECRET.getBytes(StandardCharsets.UTF_8));
 
@@ -24,6 +25,7 @@ public class JwtUtil {
     }
     public String createToken(Map<String, Object> claims,String subject){
         return Jwts.builder()
+                .setClaims(claims)
                 .setSubject(subject)
                 .setIssuedAt(new Date(System.currentTimeMillis()))
                 .setExpiration(new Date(System.currentTimeMillis()+EXPIRTION))
@@ -39,12 +41,22 @@ public class JwtUtil {
                 .getSubject();
     }
     public String extractRole(String token){
-        return Jwts.parserBuilder()
+//        return Jwts.parserBuilder()
+//                .setSigningKey(SECRET_KEY)
+//                .build()
+//                .parseClaimsJws(token)
+//                .getBody()
+//                .get("role").toString();
+        Claims claims=Jwts.parserBuilder()
                 .setSigningKey(SECRET_KEY)
                 .build()
                 .parseClaimsJws(token)
-                .getBody()
-                .get("role").toString();
+                .getBody();
+        Object role=claims.get("role");
+        if(role==null){
+            throw new RuntimeException("JWT doesn't contain role claim");
+        }
+        return role.toString();
     }
     public Date extractExpiration(String token){
         return Jwts.parserBuilder()
