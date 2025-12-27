@@ -4,6 +4,8 @@ import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import io.jsonwebtoken.security.Keys;
+import jakarta.annotation.PostConstruct;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import java.nio.charset.StandardCharsets;
@@ -14,9 +16,18 @@ import java.util.Map;
 
 @Component
 public class JwtUtil {
-    private  final String SECRET="Guhan is a good boy since 2002 and he is a very hardworker born to win";
-    private final long  EXPIRTION=1000*60*60;
-    private final Key SECRET_KEY= Keys.hmacShaKeyFor(SECRET.getBytes(StandardCharsets.UTF_8));
+
+    @Value("${jwt.secret}")
+    private String SECRET;
+    @Value("${jwt.expiration}")
+    private long EXPIRATION;
+    private  Key SECRET_KEY;
+    @PostConstruct
+    public void init() {
+        this.SECRET_KEY = Keys.hmacShaKeyFor(
+                SECRET.getBytes(StandardCharsets.UTF_8)
+        );
+    }
 
     public String generateToken(String email, String role){
         Map<String,Object>claims=new HashMap<>();
@@ -28,7 +39,7 @@ public class JwtUtil {
                 .setClaims(claims)
                 .setSubject(subject)
                 .setIssuedAt(new Date(System.currentTimeMillis()))
-                .setExpiration(new Date(System.currentTimeMillis()+EXPIRTION))
+                .setExpiration(new Date(System.currentTimeMillis()+EXPIRATION))
                 .signWith(SECRET_KEY, SignatureAlgorithm.HS256)
                 .compact();
     }
@@ -73,5 +84,11 @@ public class JwtUtil {
          final String extractedEmail=extractUserName(token);
          return (extractedEmail.equals(email) && !isTokenExpired(token));
     }
+    @PostConstruct
+    public void debug() {
+        System.out.println("JWT_SECRET = " + SECRET);
+        System.out.println("JWT_EXPIRATION = " + EXPIRATION);
+    }
+
 
 }
