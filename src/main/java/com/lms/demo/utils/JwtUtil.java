@@ -84,11 +84,11 @@ public class JwtUtil {
          final String extractedEmail=extractUserName(token);
          return (extractedEmail.equals(email) && !isTokenExpired(token));
     }
-    @PostConstruct
-    public void debug() {
-        System.out.println("JWT_SECRET = " + SECRET);
-        System.out.println("JWT_EXPIRATION = " + EXPIRATION);
-    }
+//    @PostConstruct
+//    public void debug() {
+//        System.out.println("JWT_SECRET = " + SECRET);
+//        System.out.println("JWT_EXPIRATION = " + EXPIRATION);
+//    }
 
 
 }

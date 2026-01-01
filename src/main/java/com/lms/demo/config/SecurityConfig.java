@@ -47,6 +47,7 @@ public class SecurityConfig {
                         .requestMatchers("/api/books/add","/api/books/delete/**","/api/books/update/**","/api/issues/admin/**").hasRole("ADMIN")
                         .requestMatchers("/api/issues/issue/**","/api/issues/return/**","/api/issues/history/**")
                         .hasRole("MEMBER")
+                                .anyRequest().authenticated()
                         )
                 .sessionManagement(session->session
                         .sessionCreationPolicy(SessionCreationPolicy.STATELESS))

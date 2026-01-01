@@ -37,8 +37,9 @@ public class UserService {
         }
 
             throw new RuntimeException("Invalid Credentials");
-
-
+    }
+    public User findUserByEmail(String email){
+        return userRepository.findByEmail(email).orElseThrow(()->new RuntimeException("User Not Found"));
     }
 
 }
